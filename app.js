@@ -4,6 +4,6 @@ const form = document.forms['googleSheetdb']
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => alert("Your Name Saved Successfully"))
+    .then(response => alert("Your registration is Successfull"))
     .catch(error => console.error('Error!', error.message))
 })
